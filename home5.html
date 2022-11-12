@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style5.css" rel="stylesheet" type="text/css">
+    <title>EventBear</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    
+    <div class="container">
+            
+            <img src="concert_photo.jpg" class="banner" style="width:100%;height:50%;">
+            <img src="eventbear_white_bear.png" class="logo">
+            <h1 class="blinkinglogo">EventBear</h1>
+            <h2 class="welcome">
+                <span>#</span>
+                <span>W</span>
+                <span>e</span>
+                <span>l</span>
+                <span>c</span>
+                <span>o</span>
+                <span>m</span>
+                <span>e</span>
+                <span>T</span>
+                <span>o</span>
+                <span>F</span>
+                <span>u</span>
+                <span>t</span>
+                <span>u</span>
+                <span>r</span>
+                <span>e</span>
+                            </h2>
+            <!-- <img src="neon_logo.png" class="name"> -->
+            <form action="https://opensea.io/assets?search[query]=" method="get" class="search-bar" style="top: 30%; left: 30%; ">
+                
+                <div class="search">
+
+                </div>
+                <input type="text" placeholder="Search for artists, venues and events" name="q" >
+                <button type="submit"><img src="baseline_search_black_24dp.png"></button>
+            </form>
+            <img src="fun.png" class="fire">
+            <div class="slidee">
+                <div class="slider_color">
+                    <img src="neon_back.jpg" class="neon">
+                    <img src="Highlights.png" class="highlight">
+            <!--image slider start-->
+                <div class="slider">
+                <div class="slides">
+                  <!--radio buttons start-->
+                  <input type="radio" name="radio-btn" id="radio1">
+                  <input type="radio" name="radio-btn" id="radio2">
+                  <input type="radio" name="radio-btn" id="radio3">
+                  <input type="radio" name="radio-btn" id="radio4">
+                  <!--radio buttons end-->
+                  <!--slide images start-->
+                  <div class="slide first">
+                    <img src="1.jpg" alt="">
+                  </div>
+                  <div class="slide">
+                    <img src="2.jpg" alt="">
+                  </div>
+                  <div class="slide">
+                    <img src="3.jpg" alt="">
+                  </div>
+                  <div class="slide">
+                    <img src="4.jpg" alt="">
+                  </div>
+                  <!--slide images end-->
+                  <!--automatic navigation start-->
+                  <div class="navigation-auto">
+                    <div class="auto-btn1"></div>
+                    <div class="auto-btn2"></div>
+                    <div class="auto-btn3"></div>
+                    <div class="auto-btn4"></div>
+                  </div>
+                  <!--automatic navigation end-->
+                </div>
+                <!--manual navigation start-->
+                <div class="navigation-manual">
+                  <label for="radio1" class="manual-btn"></label>
+                  <label for="radio2" class="manual-btn"></label>
+                  <label for="radio3" class="manual-btn"></label>
+                  <label for="radio4" class="manual-btn"></label>
+                </div>
+                <!--manual navigation end-->
+              </div>
+              <!--image slider end-->
+          
+              <script type="text/javascript">
+              var counter = 1;
+              setInterval(function(){
+                document.getElementById('radio' + counter).checked = true;
+                counter++;
+                if(counter > 4){
+                  counter = 1;
+                }
+              }, 5000);
+              </script>  
+              
+            </div>
+            <div class="categories">
+              <video autoplay loop muted plays-inline class="playback">
+                <source src="flow.mp4" type="video/mp4">
+              </video>
+                <div class="wrapper">
+                    <h6 class="category-sub-title" style="color: white;">.Eyes Here.</h6>
+                    <h3 class="category-title" style="color: #fff">Our Categories</h3>
+    
+    
+                    <div class="categories-container">
+    
+                        <div class="category">
+    
+                            <img src="cat1.jpg" alt="">
+                            <div class="category-body">
+                                <h4>Music</h4>
+                                <span></span>
+                            </div>
+                        </div>
+    
+                        <div class="category">
+    
+                            <img src="cat2.jpg" alt="">
+                            <div class="category-body">
+                                <h4>Movies</h4>
+                                <span></span>
+                            </div>
+                        </div>
+    
+                        <div class="category">
+    
+                            <img src="cat3.jpg" alt="">
+                            <div class="category-body">
+                                <h4>Dining</h4>
+                                <span></span>
+                            </div>
+                        </div>
+    
+                        <div class="category">
+    
+                            <img src="cat4.jpg" alt="">
+                            <div class="category-body">
+                                <h4>Conference</h4>
+                                <span></span>
+                            </div>
+                        </div>
+    
+                        <div class="category">
+    
+                            <img src="cat5.jpg" alt="">
+                            <div class="category-body">
+                                <h4>Sports</h4>
+                                <span></span>
+                            </div>
+                        </div>
+    
+                        <div class="category">
+    
+                            <img src="cat6.jpg" alt="">
+                            <div class="category-body">
+                                <h4>Exhibition</h4>
+                                <span></span>
+                            </div>
+                        </div>
+    
+                    </div>
+    
+                    <button class="btn-show-all" type="button">Show All Categories</button>
+                </div>
+              <div class="test">
+                <div id="st-box">
+                  <div class="text" style="color:#fff;"><center>Bengaluru</center></div>
+                  <img class="img1" src="bangalore.jpg" >
+                  <a href="Home.html">
+                    <img  class="bang1" src="common.png">
+                  </a>
+                  <a href="">
+                    <img class="bang2" src="BLR2.png">
+                  </a>
+                  <a href="">
+                    <img class="bang3" src="BLR3.png">
+                  </a>
+              </div>
+                
+              <div id="nd-box">
+                <div class="text" style="color:#fff;"><center>Delhi</center></div>
+                   <img class="img2" src="delhi.jpg" >
+                   <a href="Home.html">
+                    <img  class="del1" src="common.png">
+                  </a>
+                  <a href="">
+                    <img class="del2" src="Delhi2.png">
+                  </a>
+                  <a href="">
+                    <img class="del3" src="DELHI3.png">
+                  </a>
+              </div>
+                
+              <div id="rd-box">
+                <div class="text" style="color:#fff;"><center>Mumbai</center></div> 
+                  <img class="img3" src="mumbai.jpg">
+                  <a href="Home.html">
+                    <img  class="mum1" src="common.png">
+                  </a>
+                  <a href="">
+                    <img class="mum2" src="Mumbai2.png">
+                  </a>
+                  <a href="">
+                    <img class="mum3" src="Mumbai3.png">
+                  </a>
+              </div>
+              
+              </div>
+              <div class="about-us">
+                <div class="phot">
+                  <img src="about-photo.jpg" style="height: 500px; width: 100%;">
+                </div>
+                <div class="heading"><center>About Us</center></div>
+                <div class="con1"><center>We, at EventBear are pioneering in the WEB3 space with utility NFT solutions to tackle real world problems pertaining to Event Booking and Ticketingoperations.</center></div>
+                <div class="con2"><center>EventBear is a next generation of NFT based ticketing platform for live experiences that allows anyone to create, share, find and attend events that fuel their passions and enrich their lives. From music festivals, marathons, conferences, community rallies, and fundraisers, to gaming competitions and air guitar contests. Our mission is to bring the world together through live experiences and more!</center></div>
+
+              </div>
+              <footer>
+                <div class="footer-content">
+                    <h3 style="font-size: 30px;top:5%;color: aqua;">EVENTBEAR</h3>
+                    <ul class="socials">
+                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                        <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+                        <li><a href="#"><i class="fa fa-linkedin-square"></i></a></li>
+                    </ul>
+                </div>
+                <div class="footer-bottom">
+                    <p style="color:#fff">copyright &copy; <a href="#">EventBear.Inc</a>  </p>
+                            <div class="footer-menu">
+                              <ul class="f-menu">
+                                <li><a href="">Home</a></li>
+                                <li><a href="">About</a></li>
+                                <li><a href="">Contact</a></li>
+                                <li><a href="">Blog</a></li>
+                              </ul>
+                            </div>
+                </div>
+        
+            </footer>
+            </div>
+    
+            <!-- our categories end-->
+            
+            
+            </div> 
+            
+            
+    </div>    
+ </body>
+</html>

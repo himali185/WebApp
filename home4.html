@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style4.css" rel="stylesheet" type="text/css">
+    <title>EventBear</title>
+</head>
+<body>
+    <div class="container">
+            <img src="concert_photo.jpg" class="banner" style="width:100%;height:50%;">
+            <img src="eventbear_white_bear.png" class="logo">
+            <img src="neon_logo.png" class="name">
+            <form action="https://opensea.io/assets?search[query]=" method="get" class="search-bar" style="top: 30%; left: 30%; ">
+                
+                <div class="search">
+
+                </div>
+                <input type="text" placeholder="Search for artists, venues and events" name="q" >
+                <button type="submit"><img src="baseline_search_black_24dp.png"></button>
+            </form>
+            <img src="fun.png" class="fire">
+            <div class="slidee">
+                <div class="slider_color">
+                    <img src="neon_back.jpg" class="neon">
+                    <img src="Highlights.png" class="highlight">
+            <!--image slider start-->
+                <div class="slider">
+                <div class="slides">
+                  <!--radio buttons start-->
+                  <input type="radio" name="radio-btn" id="radio1">
+                  <input type="radio" name="radio-btn" id="radio2">
+                  <input type="radio" name="radio-btn" id="radio3">
+                  <input type="radio" name="radio-btn" id="radio4">
+                  <!--radio buttons end-->
+                  <!--slide images start-->
+                  <div class="slide first">
+                    <img src="1.jpg" alt="">
+                  </div>
+                  <div class="slide">
+                    <img src="2.jpg" alt="">
+                  </div>
+                  <div class="slide">
+                    <img src="3.jpg" alt="">
+                  </div>
+                  <div class="slide">
+                    <img src="4.jpg" alt="">
+                  </div>
+                  <!--slide images end-->
+                  <!--automatic navigation start-->
+                  <div class="navigation-auto">
+                    <div class="auto-btn1"></div>
+                    <div class="auto-btn2"></div>
+                    <div class="auto-btn3"></div>
+                    <div class="auto-btn4"></div>
+                  </div>
+                  <!--automatic navigation end-->
+                </div>
+                <!--manual navigation start-->
+                <div class="navigation-manual">
+                  <label for="radio1" class="manual-btn"></label>
+                  <label for="radio2" class="manual-btn"></label>
+                  <label for="radio3" class="manual-btn"></label>
+                  <label for="radio4" class="manual-btn"></label>
+                </div>
+                <!--manual navigation end-->
+              </div>
+              <!--image slider end-->
+          
+              <script type="text/javascript">
+              var counter = 1;
+              setInterval(function(){
+                document.getElementById('radio' + counter).checked = true;
+                counter++;
+                if(counter > 4){
+                  counter = 1;
+                }
+              }, 5000);
+              </script>  
+              
+            </div>
+            <div class="categories">
+                <div class="wrapper">
+                    <h6 class="category-sub-title">.Eyes Here.</h6>
+                    <h3 class="category-title">Our Categories</h3>
+    
+    
+                    <div class="categories-container">
+    
+                        <div class="category">
+    
+                            <img src="cat1.jpg" alt="">
+                            <div class="category-body">
+                                <h4>Music</h4>
+                                <span></span>
+                            </div>
+                        </div>
+    
+                        <div class="category">
+    
+                            <img src="cat2.jpg" alt="">
+                            <div class="category-body">
+                                <h4>Movies</h4>
+                                <span></span>
+                            </div>
+                        </div>
+    
+                        <div class="category">
+    
+                            <img src="cat3.jpg" alt="">
+                            <div class="category-body">
+                                <h4>Dining</h4>
+                                <span></span>
+                            </div>
+                        </div>
+    
+                        <div class="category">
+    
+                            <img src="cat4.jpg" alt="">
+                            <div class="category-body">
+                                <h4>Conference</h4>
+                                <span></span>
+                            </div>
+                        </div>
+    
+                        <div class="category">
+    
+                            <img src="cat5.jpg" alt="">
+                            <div class="category-body">
+                                <h4>Sports</h4>
+                                <span></span>
+                            </div>
+                        </div>
+    
+                        <div class="category">
+    
+                            <img src="cat6.jpg" alt="">
+                            <div class="category-body">
+                                <h4>Exhibition</h4>
+                                <span></span>
+                            </div>
+                        </div>
+    
+                    </div>
+    
+                    <button class="btn-show-all" type="button">Show All Categories</button>
+                </div>
+            </div>
+    
+            <!-- our categories end-->
+
+            </div> 
+        
+            
+    </div> 
+    
+  
+    
+</body>
+</html>
